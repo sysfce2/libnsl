@@ -3,10 +3,9 @@ exec_prefix=@exec_prefix@
 libdir=@libdir@
 includedir=@includedir@
 
-Name: libnsl
+Name: @PACKAGE_NAME@
 Description: Library containing NIS functions using TI-RPC (IPv6 enabled)
 Requires: libtirpc >= 1.0.1
 Version: @PACKAGE_VERSION@
-Libs: -L@libdir@ -lnsl
-Cflags: -I@includedir@
-
+Libs: -L${libdir} -lnsl
+Cflags: -I${includedir}
